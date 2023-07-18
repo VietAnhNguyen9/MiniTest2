@@ -22,4 +22,22 @@ public class CrispyFlour extends Material{
         return manufacturingDate.plusDays(365);
     }
 
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    @Override
+    public String toString() {
+        return "CrispyFlour{" +
+                "quantity=" + quantity +
+                ", id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", manufacturingDate=" + manufacturingDate +
+                ", cost=" + cost +
+                '}';
+    }
 }
